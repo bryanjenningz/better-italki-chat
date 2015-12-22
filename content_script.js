@@ -32,4 +32,6 @@ var getMessages = function() {
   }); 
 };
 
-var stopId = setInterval(getMessages, 1000);
+// When a new message notification comes in, load the message.
+var observer = new MutationObserver(getMessages);
+observer.observe(document.querySelector('#font_head1'), {childList: true});
