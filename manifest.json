@@ -7,7 +7,12 @@
   "content_scripts": [
     {
       "matches": ["http://www.italki.com/messages/with/*"],
-      "js": ["jquery.js", "get_messages.js", "send_message.js"]
+      "js": [
+        "jquery.js",
+        "get_messages.js",
+        "send_message.js",
+        "message_notification.js"
+      ]
     }
   ]
 }
