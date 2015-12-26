@@ -14,7 +14,7 @@
     // Having a null notificationId indicates there are currently no intervals.
     if (notificationId === null && messageNotification.text()) {
       notificationId = setInterval(function() {
-        title.text(isOriginalTitle ? 'message received' : originalTitle);
+        title.text(isOriginalTitle ? 'message received' : originalTitleText);
         isOriginalTitle = !isOriginalTitle;
       }, 1000);
     }
