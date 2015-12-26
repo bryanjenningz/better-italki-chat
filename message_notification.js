@@ -22,7 +22,7 @@
   
   var stopAlternatingTitle = function() {
     if (notificationId !== null) {
-      title.html(originalTitle);
+      title.html(originalTitleText);
       isOriginalTitle = true;
       clearInterval(notificationId);
       notificationId = null;
