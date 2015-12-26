@@ -30,6 +30,6 @@
   };
   
   var observer = new MutationObserver(alternateTitle);
-  observer.observe(messageNotification, {childList: true});
+  observer.observe(document.querySelector('#font_head1'), {childList: true});
   $('#txt_send_content').focus(stopAlternatingTitle);
 })();
