@@ -32,4 +32,5 @@
   var observer = new MutationObserver(alternateTitle);
   observer.observe(document.querySelector('#font_head1'), {childList: true});
   $('#txt_send_content').focus(stopAlternatingTitle);
+  $('#txt_send_content').keydown(stopAlternatingTitle);
 })();
