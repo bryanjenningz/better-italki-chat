@@ -4,6 +4,14 @@
   "description": "Turns italki's static messaging system into a dynamic and fun chat system",
   "version": "1.0",
 
+  "permissions": [
+    "storage"
+  ],
+
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  
   "content_scripts": [
     {
       "matches": ["http://www.italki.com/messages/with/*"],
@@ -11,7 +19,8 @@
         "jquery.js",
         "get_messages.js",
         "send_message.js",
-        "message_notification.js"
+        "message_notification.js",
+        "save_text.js"
       ]
     }
   ]
