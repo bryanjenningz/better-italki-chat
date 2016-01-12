@@ -7,4 +7,5 @@ Turns italki's static messaging system into a dynamic and fun chat system.
 3.  Autofocuses on the chatbox when you send messages by hitting ENTER.
 4.  Users automatically get chat message notifications.
 5.  Users can save vocab words and phrases by highlighting text and holding down the "S" key.
-6.  Users can download their saved words.
+6.  Users can view their vocab list in chrome as they add new words.
+7.  Users can download their saved vocab list.
