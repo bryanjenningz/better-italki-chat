@@ -26,7 +26,7 @@ $(document).keydown(trackSKey);
 $('.contentP').delegate('.m_con', 'mouseup', saveText);
 
 chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
-  if (message === 'selections') {
+  if (message.type === 'selections') {
     sendResponse(selections);
   }
 });
